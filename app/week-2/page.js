@@ -5,7 +5,7 @@ return (
 <main>
 <h1>Shopping List</h1>
 <StudentInfo />
-<Link href="/" className="hover:underline">This will take you to home page</Link>
+<Link href="/">This will take you to home page</Link>
 </main>
 );
 }
