@@ -15,13 +15,13 @@ export default function NewItem(){
         if (quantity>1){setQuantity(quantity-1)}
     }
 
-    const buttonCss="quantity-btn w-10 h-10 rounded-full bg-green-100 text-2xl text-green-700 flex items-center justify-center hover:bg-green-200 active:bg-green-300"
-
+    const buttonCssActive="quantity-btn w-10 h-10 rounded-full bg-green-100 text-2xl text-green-700 flex items-center justify-center hover:bg-green-200 active:bg-green-300"
+    const buttonCssInactive="quantity-btn w-10 h-10 rounded-full bg-gray-200 text-2xl text-gray-400 flex items-center justify-center cursor-not-allowed"
     return(
         <div className='flex items-center space-x-5'>
-            <button onClick={decreaseQuantity} className={buttonCss}>-</button>
+            <button onClick={decreaseQuantity} className={(quantity!=1)?buttonCssActive:buttonCssInactive}>-</button>
             <span className='flex items-center justify-center text-green-700'>{quantity}</span>
-            <button onClick={increaseQuantity} className={buttonCss}>+</button>
+            <button onClick={increaseQuantity} className={(quantity!=20)?buttonCssActive:buttonCssInactive}>+</button>
         </div>
     )
 }
