@@ -6,11 +6,13 @@ export default function NewItem(){
     const[quantity, setQuantity]=useState(1)
 
     const increaseQuantity=()=>{
-        setQuantity(quantity+1)
+        if(quantity<20){
+            setQuantity(quantity+1)
+        }
     }
 
     const decreaseQuantity=()=>{
-        setQuantity(quantity-1)
+        if (quantity>1){setQuantity(quantity-1)}
     }
 
     const buttonCss="quantity-btn w-10 h-10 rounded-full bg-green-100 text-2xl text-green-700 flex items-center justify-center hover:bg-green-200 active:bg-green-300"
