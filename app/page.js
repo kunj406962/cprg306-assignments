@@ -1,4 +1,3 @@
-import { SpanStatus } from "next/dist/trace";
 import Link from "next/link";
 export default function Page(){
   const liCss="flex items-center px-4 py-3 rounded-lg bg-green-50 text-gray-700 hover:bg-green-100 transition-all transform hover:translate-x-4"
