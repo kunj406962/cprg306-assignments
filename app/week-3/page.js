@@ -1,4 +1,7 @@
 import ItemList from "./item-list";
+export const metadata = {
+  title: "Week 3",
+};
 export default function page(){
     return(
         <div className="bg-gradient-to-r from-emerald-100 to-white p-6 "> 

@@ -1,4 +1,7 @@
 import NewItem from "./new-item";
+export const metadata = {
+  title: "Week 4",
+};
 export default function Page(){
     return(
         <main>

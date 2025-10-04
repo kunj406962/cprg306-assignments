@@ -1,5 +1,8 @@
 import Link from "next/link";
 import StudentInfo from "./student-info";   
+export const metadata = {
+  title: "Week 2",
+};
 export default function Page() {
 return (
 <main>
