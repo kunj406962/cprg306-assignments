@@ -4,7 +4,7 @@ import NewItem from "./new-item";
 import itemsData from "./items.json";
 import { useState } from "react";
 
-export default function page(){
+export default function Page(){
     const [item, setItem]=useState(itemsData);
 
     const handleAddItem=(newItem)=>{
