@@ -44,6 +44,12 @@ export default function Page(){
             <span>This is the link to week-7 page</span>
           </li>
         </Link>
+        <Link href="week-8" className={linkCss}>
+          <li className={liCss}>
+            <span className={spanCss}></span>
+            <span>This is the link to week-8 page</span>
+          </li>
+        </Link>
       </ul>
     </main>
   )
