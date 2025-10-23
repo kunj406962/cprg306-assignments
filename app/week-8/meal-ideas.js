@@ -28,7 +28,7 @@ export default function MealIdeas({ingredient, className}){
                 :
                 (
                     <div className={className}>
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">Meal Ideas with "{ingredient}"</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">Meal Ideas with &quot;{ingredient}&quot;</h2>
                         {
                             !mealIdeas ? (
                                 <p>No meal ideas found.</p>
